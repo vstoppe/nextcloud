@@ -18,6 +18,10 @@ The environment is mainly conficured by the vars:
 
 This way you can eg. run a production environment "nextcloud" but also spin up instances for testing, maybe "nexteval". 
 
+## startup
+
+
+
 
 ## docker-compose files
 
@@ -35,11 +39,11 @@ Feel free to adjust them to your needs or link them as your compose file:
 
 # !Setup
 
-Percona needs to get write permission for it's folders manually. After powering up the services the first time the db crashes by a lack of write permissions. This has to be solved:
+Nextcloud needs to get write permission to some folders manually. The setup.sh takes care of it.
 
 `source myhostname.env`
-`mkdir -p $DATA/$SERVICE/mysql/lib $DATA/$SERVICE/mysql/log `
-`chown -R 999 $DATA/$SERVICE/mysql`
+`./setup.sh`
+`docker-compse up
 
 
 
