@@ -30,6 +30,7 @@ The folder docker-compose-files containes different compose files for nextcloud.
 - docker-compose_01_basic.yml: nextcloud-apache + mysql
 - docker-compose_02_fpm.yml: netcloud-fpm + mysql
 - docker-compose_03_redis.yml: nextcloud-fpm + mysql + redis
+- docker-compose_04-fpm-redis-postgres.yml - fpm + redis + mysql
 
 Feel free to adjust them to your needs or link them as your compose file:
 
@@ -37,7 +38,7 @@ Feel free to adjust them to your needs or link them as your compose file:
 
 
 
-# !Setup
+# Setup
 
 Nextcloud needs to get write permission to some folders manually. The setup.sh takes care of it.
 
