@@ -43,8 +43,10 @@ Feel free to adjust them to your needs or link them as your compose file:
 Nextcloud needs to get write permission to some folders manually. The setup.sh takes care of it.
 
 `source myhostname.env`
+
 `./setup.sh`
-`docker-compse up
+
+`docker-compse up`
 
 
 
